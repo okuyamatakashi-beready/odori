@@ -962,7 +962,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    #dynamic-content {
+      height: 82vw;
+    }
     h1 {
       margin: 5.2vw 0 0 10.4vw;
       position: absolute;

@@ -792,6 +792,9 @@ img {
     /*Scrollテキストの描写*/
     /*高さ・位置・透過が変化して線が上から下に動く*/
   }
+  .wrap01 #dynamic-content {
+    height: 82vw;
+  }
   .wrap01 h1 {
     margin: 5.2vw 0 0 10.4vw;
     position: absolute;
