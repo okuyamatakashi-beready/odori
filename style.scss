@@ -179,11 +179,69 @@ img {
   }
 
   .wrap01 {
+    background-image: url(images/bg_2024_sp.jpg);
+    background-position: center 75vw;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     position: relative;
-
     .fv {
+      background-size: 100%;
+      height: 100vh;
+      width: 100%;
       position: relative;
-
+      .mv__slider {
+        width: 100%;
+        height: 100%;
+        .mv__slider--sp {
+          width: 100%;
+          height: 100vh;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          &:nth-child(1) {
+            background-image: url(images/mv01-sp.jpg);
+          }
+          &:nth-child(2) {
+            background-image: url(images/mv02-sp.jpg);
+          }
+          &:nth-child(3) {
+            background-image: url(images/mv03-sp.jpg);
+          }
+          &:nth-child(4) {
+            background-image: url(images/mv04-sp.jpg);
+          }
+          &:nth-child(5) {
+            background-image: url(images/mv05-sp.jpg);
+          }
+          &:nth-child(6) {
+            background-image: url(images/mv06-sp.jpg);
+          }
+          &:nth-child(7) {
+            background-image: url(images/mv07-sp.jpg);
+          }
+        }
+      }
+      .fv__logo {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        transform: translate(0%,-50%);
+        text-align: center;
+        img {
+          width: 152px;
+          margin-bottom: 2.5rem;
+        }
+        p {
+          font-size: 15px;
+          text-align: center;
+          line-height: 2;
+          font-weight: 700;
+          letter-spacing: 0.15em;
+        }
+      }
       .image01 {
         position: absolute;
         right: 0;
@@ -303,10 +361,16 @@ img {
 
     #aftermovie {
       margin: 0 auto;
-      padding: 1380px 20px 50px;
+      padding: 55px 20px 50px;
       text-align: center;
       width: 100%;
-
+      h2 {
+        text-align: center;
+        margin-bottom: 45px;
+        img {
+          width: 157px;
+        }
+      }
       .inner {
         margin: 0 auto 38px;
         width: 100%;
@@ -324,6 +388,7 @@ img {
     }
 
     #gallerynav {
+      padding-top: 68px;
       h2 {
         margin: 0 auto 35px;
         padding: 0 40px;
@@ -351,7 +416,6 @@ img {
     
 
     #about {
-      background-image: url(images/bg06@2x.jpg);
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -957,13 +1021,12 @@ img {
     }
   }
   .wrap01 {
-    background-image: url(images/bg01@2x.jpg);
-    background-position: center 67vw;
+    background-image: url(images/bg_2024.jpg);
+    background-position: center 60vw;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     position: relative;
     #dynamic-content {
-      height: 82vw;
     }
     h1 {
       margin: 5.2vw 0 0 10.4vw;
@@ -975,13 +1038,13 @@ img {
       background-size: 100%;
       height: 100vh;
       width: 100%;
-
+      position: relative;
       .mv__slider {
         width: 100%;
         height: 100%;
         .mv__slider--pc {
           width: 100%;
-          height: 500px ;
+          height: 100vh;
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
@@ -1006,6 +1069,24 @@ img {
           &:nth-child(7) {
             background-image: url(images/mv07.jpg);
           }
+        }
+      }
+      .fv__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        img {
+          width: 336px;
+          margin-bottom: 2.5rem;
+        }
+        p {
+          font-size: clamp(16px,1.5rem,25px);
+          text-align: center;
+          line-height: 2;
+          font-weight: 700;
+          letter-spacing: 0.15em;
         }
       }
       // .image01 {
@@ -1100,10 +1181,13 @@ img {
 
     #aftermovie {
       margin: 0 auto;
-      padding: 86vw 0 6vw;
+      padding: 10vw 0 12vw;
       text-align: center;
       width: 65vw;
-
+      h2 {
+        margin: 0 auto 5vw;
+        width: 25vw;
+      }
       .inner {
         margin: 0 auto 38px;
         width: 100%;
@@ -1121,7 +1205,7 @@ img {
     section#gallerynav {
       margin: 0 auto 6.25vw;
       text-align: center;
-
+      padding-top: 7.5rem;
       h2 {
         margin: 0 auto 5vw;
         width: 33vw;
@@ -1584,7 +1668,20 @@ footer {
   background-size: cover;
   padding: 6.5vw 0 3vw;
   text-align: center;
-
+  p {
+    span {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+    text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.8vw;
+  }
   h4 {
     font-size: 1.6vw;
     font-size: clamp(12px, 1.6vw, 30px);
@@ -1787,7 +1884,25 @@ footer {
     padding: 6.5vw 0 3vw;
     position: relative;
     text-align: center;
-
+    .flt__img {
+      width: 100%;
+      position: absolute;
+      top: -30%;
+    }
+    p {
+      span {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: clamp(14px,1.2rem,20px);
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+      }
+      text-align: center;
+        font-size: clamp(14px,1.2rem,20px);
+        letter-spacing: 0.05em;
+        margin-bottom: 1.8vw;
+    }
     &:before {
       background-image: url(images/bg11@2x.png);
       background-position: center;
@@ -1811,7 +1926,7 @@ footer {
     }
 
     .logo {
-      margin: 0 auto 5.9vw;
+      margin: 0 auto 2.6vw;
       width: 20vw;
     }
 

@@ -1,17 +1,4 @@
-  /* ===============================================
-MV　スライダー
-=============================================== */
 
-$(document).ready(function(){
-  $('.mv__slider').slick({
-      dots: false,
-      infinite: true,
-      arrows: false,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
-  });
-});
 
 /* ===============================================
 # waypoints

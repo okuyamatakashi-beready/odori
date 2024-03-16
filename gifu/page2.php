@@ -1,4 +1,3 @@
-<?php require_once('../functions.php'); ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -88,19 +87,39 @@
 	</header>
 	<!-- /header -->
 
-	<?php if(is_mobile()){ ?>
-			<div class="followus">
-				<a href="https://www.instagram.com/odol_gujoodori/" target="_blank">
-					<img src="../images/insta01.png" srcset="../images/insta01.png 1x, ../images/insta01@2x.png 2x" alt="インスタグラム">
-				</a>
-				<a href="https://www.youtube.com/@odolkikaku" target="_blank">
-						<img src="../images/youtube01.png" srcset="../images/youtube01.png 1x, ../images/youtube01@2x.png 2x" alt="youtube">
+	<div id="follow-content">
+		<script>
+			function isMobile() {
+				return /iPhone|iPad|iPod|Android.*Mobile|Windows.*Phone/i.test(navigator.userAgent);
+			}
+
+			// コンテンツを動的に生成
+			var mobileContent = `
+				<div class="followus">
+					<a href="https://www.instagram.com/odol_gujoodori/" target="_blank">
+						<img src="../images/insta01.png" srcset="../images/insta01.png 1x, ../images/insta01@2x.png 2x" alt="インスタグラム">
 					</a>
-			</div>
-			<!-- /.followus -->
-		<?php } else { ?>
+					<a href="https://www.youtube.com/@odolkikaku" target="_blank">
+							<img src="../images/youtube01.png" srcset="../images/youtube01.png 1x, ../images/youtube01@2x.png 2x" alt="youtube">
+						</a>
+				</div>
+				`;
+			var desktopContent = `
+			`;
+
+			// コンテンツを挿入する要素を取得
+			var contentElement = document.getElementById('follow-content');
+
+			// モバイルデバイスかデスクトップかに応じて内容を挿入
+			if (isMobile()) {
+				contentElement.insertAdjacentHTML('beforeend', mobileContent);
+			} else {
+				contentElement.insertAdjacentHTML('beforeend', desktopContent);
+			}
+		</script>
+
+	</div>
 		
-		<?php } ?>
 
 	<div class="fv">
 		<h2>
@@ -275,7 +294,10 @@
 	</div>
 	<!-- /.gototop -->
 
-	<footer>
+	<footer class="under__page">
+		<div class="flt__img">
+			<img src="../images/footer_illust.svg" srcset="" alt="">
+		</div>
 		<h4>
 			主催
 		</h4>
