@@ -86,6 +86,8 @@ function isMobile() {
 
 	<link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
 	<script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
+	<link rel="stylesheet" href="/scss/slick-theme.css">
+	<link rel="stylesheet" href="/scss/slick.css">
 	<link rel="stylesheet" href="style.css">
 
 </head>
@@ -133,33 +135,43 @@ function isMobile() {
 			</div>
 			<!-- /.followus -->`;
         var desktopContent = `
-			<h1 class="">
-				<img src="images/header01.png" srcset="images/header01.png 1x, images/header01@2x.png 2x" alt="郡上おどり2023">
-			</h1>
-			<div class="fv">
-				<div class="logo02">
-					<img src="images/logo02.png" srcset="images/logo02.png 1x, images/logo02@2x.png 2x" alt="郡上おどり2023">
-				</div>
-				<!-- /.logo02 -->
+		<div class="fv">
+			<div class="mv__slider">
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
+				<div class="mv__slider--pc"></div>
 			</div>
-			<!-- /.fv -->
-			<div class="followus">
-				<dl>
-					<dt>
-						<img src="images/followus04.png" srcset="images/followus04.png 1x, images/followus04@2x.png 2x" alt="FOLLOW US">
-					</dt>
-					<dd>
-						<a href="https://www.instagram.com/odol_gujoodori/" target="_blank">
-							<img src="images/insta01.png" srcset="images/insta01.png 1x, images/insta01@2x.png 2x" alt="インスタグラム">
-						</a>
-					</dd>
-					<dd>
-						<a href="https://www.youtube.com/@odolkikaku" target="_blank">
-							<img src="images/youtube01.png" srcset="images/youtube01.png 1x, images/youtube01@2x.png 2x" alt="youtube">
-						</a>
-					</dd>
-				</dl>
-			</div>`;
+
+			<div class="fv__logo">
+				<img src="images/2024logo.svg" alt="郡上ODORI2024">
+				<p>
+					開催情報は4⽉に<br>
+					郡上ODORI公式Instagramにて<br>先行発表予定。
+				</p>
+			</div>
+		</div>
+		<div class="followus">
+			<dl>
+				<dt>
+					<img src="images/followus04.png" srcset="images/followus04.png 1x, images/followus04@2x.png 2x" alt="FOLLOW US">
+				</dt>
+				<dd>
+					<a href="https://www.instagram.com/odol_gujoodori/" target="_blank">
+						<img src="images/insta01.png" srcset="images/insta01.png 1x, images/insta01@2x.png 2x" alt="インスタグラム">
+					</a>
+				</dd>
+				<dd>
+					<a href="https://www.youtube.com/@odolkikaku" target="_blank">
+						<img src="images/youtube01.png" srcset="images/youtube01.png 1x, images/youtube01@2x.png 2x" alt="youtube">
+					</a>
+				</dd>
+			</dl>
+		</div>
+		`;
 
         // コンテンツを挿入する要素を取得
         var contentElement = document.getElementById('dynamic-content');
@@ -282,6 +294,7 @@ function isMobile() {
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/style.js"></script>
 </body>
 
