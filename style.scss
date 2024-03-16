@@ -145,7 +145,7 @@ img {
     position: fixed;
     right: 20px;
     top: 20px;
-    width: 105px;
+    width: 150px;
     z-index: 100;
     a {
       display: flex;
@@ -822,7 +822,8 @@ img {
       }
 
       .insta,
-      .youtube {
+      .youtube,
+      .X {
         display: none;
       }
 
@@ -970,13 +971,13 @@ img {
 
     .followus02 {
       margin: 0 auto;
-      width: 155px!important;
+      width: 175px!important;
       dl {
         align-items: center;
         margin: 0 auto 30px;
         display: flex;
         justify-content: center;
-        width: 155px;
+        width: 175px;
         dt {
           align-items: center;
           display: flex;
@@ -986,6 +987,9 @@ img {
         dd {
           margin: auto 0 auto 5px;
           width: 22px;
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -1016,10 +1020,14 @@ img {
         dd {
           margin: 0 auto 1vw;
           width: 2vw;
+          img {
+            width: 100%;
+          }
         }
       }
     }
   }
+
   .wrap01 {
     background-image: url(images/bg_2024.jpg);
     background-position: center 60vw;
@@ -1668,6 +1676,12 @@ footer {
   background-size: cover;
   padding: 6.5vw 0 3vw;
   text-align: center;
+  position: relative;
+  .flt__img {
+    width: 100%;
+    position: absolute;
+    top: -17%;
+  }
   p {
     span {
       display: block;
@@ -1740,6 +1754,7 @@ footer {
 
       .youtube {
         width: 2vw;
+        margin-bottom: 1vw;
       }
     }
   }
@@ -1934,13 +1949,13 @@ footer {
       align-items: center;
       display: flex;
       margin: 0 auto;
-      width: 12.3vw;
+      width: 14.3vw;
 
       dl {
         align-items: center;
         display: flex;
-        justify-content: center;
-        width: 12.3vw;
+        justify-content: space-between;
+        width: 14.3vw;
         dt {
           align-items: center;
           display: flex;
@@ -1950,6 +1965,9 @@ footer {
         dd {
           margin: auto 0 auto .4vw;
           width: 1.56vw;
+          img {
+            width: 100%;
+          }
         }
       }
 

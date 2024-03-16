@@ -131,7 +131,7 @@ img {
     position: fixed;
     right: 20px;
     top: 20px;
-    width: 105px;
+    width: 150px;
     z-index: 100;
   }
   .followus a {
@@ -697,7 +697,8 @@ img {
     z-index: 10;
   }
   .archive header .insta,
-  .archive header .youtube {
+  .archive header .youtube,
+  .archive header .X {
     display: none;
   }
   .archive header .followus01 .header {
@@ -808,14 +809,14 @@ img {
   }
   footer .followus02 {
     margin: 0 auto;
-    width: 155px !important;
+    width: 175px !important;
   }
   footer .followus02 dl {
     align-items: center;
     margin: 0 auto 30px;
     display: flex;
     justify-content: center;
-    width: 155px;
+    width: 175px;
   }
   footer .followus02 dl dt {
     align-items: center;
@@ -826,6 +827,9 @@ img {
   footer .followus02 dl dd {
     margin: auto 0 auto 5px;
     width: 22px;
+  }
+  footer .followus02 dl dd img {
+    width: 100%;
   }
   .gototop01 {
     bottom: 20px;
@@ -851,6 +855,9 @@ img {
   .home .followus dl dd {
     margin: 0 auto 1vw;
     width: 2vw;
+  }
+  .home .followus dl dd img {
+    width: 100%;
   }
   .wrap01 {
     background-image: url(images/bg_2024.jpg);
@@ -1367,6 +1374,12 @@ footer {
   background-size: cover;
   padding: 6.5vw 0 3vw;
   text-align: center;
+  position: relative;
+}
+footer .flt__img {
+  width: 100%;
+  position: absolute;
+  top: -17%;
 }
 footer p {
   text-align: center;
@@ -1431,6 +1444,7 @@ footer .followus02 a {
   }
   header .followus01 .youtube {
     width: 2vw;
+    margin-bottom: 1vw;
   }
   section#gallerynav {
     margin: 0 auto 6.25vw;
@@ -1590,13 +1604,13 @@ footer .followus02 a {
     align-items: center;
     display: flex;
     margin: 0 auto;
-    width: 12.3vw;
+    width: 14.3vw;
   }
   footer .followus02 dl {
     align-items: center;
     display: flex;
-    justify-content: center;
-    width: 12.3vw;
+    justify-content: space-between;
+    width: 14.3vw;
   }
   footer .followus02 dl dt {
     align-items: center;
@@ -1607,6 +1621,9 @@ footer .followus02 a {
   footer .followus02 dl dd {
     margin: auto 0 auto 0.4vw;
     width: 1.56vw;
+  }
+  footer .followus02 dl dd img {
+    width: 100%;
   }
   footer .followus02 .header {
     margin-right: 1.56vw;
